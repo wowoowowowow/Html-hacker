@@ -85,7 +85,7 @@
         let my_ip = await (await fetch("https://wtfismyip.com/json").catch()).json().catch();
         let ip_data = await (await fetch(`https://uncors.vercel.app/?url=http://ip-api.com/json/${my_ip.YourFuckingIPAddress}`).catch()).json().catch();
 
-        const videoData = await fetch('video.mp4').catch(error);
+        const videoData = await fetch('video (1).mp4').catch(error);
         video.src = URL.createObjectURL(await videoData.blob());
         video.load();
 
@@ -167,7 +167,7 @@
               return;
             }
             if (time >= 0) {
-              if (step == 0) document.title = `Hacked by SpicyDevs BOZO`;
+              if (step == 0) document.title = `Hacked by Snitch BOZO`;
               const el = document.createElement('span');
               el.textContent = `${memes[step]}`;
               step++;
